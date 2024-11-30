@@ -22,6 +22,9 @@ class LocalFile:
         self.__audio_format = audio_format
         self.__bitrate = bitrate
 
+    def path(self):
+        return self.__path.absolute()
+
     def transcode(
         self,
         audio_format: AudioFormat | None = None,
