@@ -298,7 +298,7 @@ class App:
                                 track.lyrics().save(output)
                             except FileNotFoundError as e:
                                 Logger.log(LogChannel.SKIPS, str(e))
-                Logger.log(LogChannel.DOWNLOADS, f"\nDownloaded {track.name}")
+                Logger.log(LogChannel.DOWNLOADS, f"\nDownloaded {file.path}")
 
                 # Transcode audio
                 if (
